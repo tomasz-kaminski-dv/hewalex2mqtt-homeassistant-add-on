@@ -1,6 +1,8 @@
 # Changelog
 *Current version can also be found in /hewalex/config.json*
 
+Forked and removed JSON requirement.
+
 ## 0.1.2
 - More documentation
 - Updated configuration
