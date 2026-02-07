@@ -6,6 +6,9 @@ Home Assistant add-on for Hewalex2MQTT-EduardWitteveen
 **Overview:**
 The Hewalex2MQTT add-on for Home Assistant serves as a bridge between Hewalex heat pumps and the Home Assistant platform, leveraging MQTT as the communication protocol. This add-on allows users to monitor and potentially control their Hewalex heat pump directly from the Home Assistant interface.
 
+Fork changes:
+Added mqtt_retain config parameter.
+
 **Key Features:**
 
 1. **MQTT Communication**: Utilizes MQTT, a lightweight messaging protocol, to establish real-time communication between the heat pump and Home Assistant. This ensures a reliable and timely exchange of data.
@@ -95,7 +98,7 @@ The description provided is a general guide based on the information given and m
 3. **Add Repository**:
    - In the "Add-on winkel" (Dutch for "Add-on store"), look for the three dots (ellipsis) in the upper right corner and click on them.
    - From the dropdown, select `Repositories`.
-   - Here you will see an option to add a new repository. Paste the link: `https://github.com/EduardWitteveen/hewalex2mqtt-homeassistant-add-on` into the given space and confirm to add this repository.
+   - Here you will see an option to add a new repository. Paste the link: `https://github.com/tomasz-kaminski-dv/hewalex2mqtt-homeassistant-add-on.git` into the given space and confirm to add this repository.
 
 4. **Check for Updates**:
    - Once the repository is added, again click on the three dots in the "Add-on winkel".

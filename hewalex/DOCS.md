@@ -95,7 +95,7 @@ The description provided is a general guide based on the information given and m
 3. **Add Repository**:
    - In the "Add-on winkel" (Dutch for "Add-on store"), look for the three dots (ellipsis) in the upper right corner and click on them.
    - From the dropdown, select `Repositories`.
-   - Here you will see an option to add a new repository. Paste the link: `https://github.com/EduardWitteveen/hewalex2mqtt-homeassistant-add-on` into the given space and confirm to add this repository.
+   - Here you will see an option to add a new repository. Paste the link: `https://github.com/tomasz-kaminski-dv/hewalex2mqtt-homeassistant-add-on.git` into the given space and confirm to add this repository.
 
 4. **Check for Updates**:
    - Once the repository is added, again click on the three dots in the "Add-on winkel".
@@ -128,6 +128,7 @@ mqtt_port: 1883
 mqtt_authentication: true
 mqtt_user: mqttuser
 mqtt_pass: mqttpass
+mqtt_retain: true
 Device_Zps_Enabled: false
 Device_Zps_Address: 192.168.1.7
 Device_Zps_Port: 8899
