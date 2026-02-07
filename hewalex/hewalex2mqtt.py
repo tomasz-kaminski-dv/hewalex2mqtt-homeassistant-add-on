@@ -74,6 +74,11 @@ def initConfiguration():
         _MQTT_pass = os.getenv('MQTT_pass')
     else:
         _MQTT_pass = config['mqtt_pass']    
+    global _MQTT_retain
+    if os.getenv('MQTT_retain') != None:
+        _MQTT_retain = os.getenv('MQTT_retain') == "True"
+    else:
+        _MQTT_retain = config.get('mqtt_retain', True)  # Default True
     
     # ZPS Device
     global _Device_Zps_Enabled
@@ -185,7 +190,7 @@ def on_message_serial(obj, h, sh, m):
                 if key not in MessageCache or MessageCache[key] != val:
                     MessageCache[key] = val
                     logger.info(key + " " + val)
-                    client.publish(key, val)
+                    client.publish(key, val, retain=_MQTT_retain)
 
     except Exception as e:
         logger.info('Exception in on_message_serial: '+ str(e))
